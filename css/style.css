@@ -1,5 +1,70 @@
 * {
   margin: 0;
   padding: 0;
+  
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+nav >header {
+  padding: 1.5rem;
+}
+
+#navbar li {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  list-style: none;
+  border-top: 1px solid black;
+  height: 1rem;
+}
+#navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+#navbar {
+  height: 30%;
+  border-right: 3px solid rgb(201, 199, 199);
+  
+}
+
+span,
+p,
+nav,
+header {
+  font-family: 'Calibri';
+}
+
+
+.main-section {
+  margin: 1.5rem 2rem;
+}
+
+header {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+
+@media screen and (min-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+  #navbar {
+    width: 17%;
+    height: 100%;
+    position: fixed;
+  }
+  main {
+    margin-left: 18%;
+  }
+}
