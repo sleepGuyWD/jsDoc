@@ -75,7 +75,7 @@
     </section>
     <section class="main-section" id="What_you_should_already_know">
       <header>What you should already know</header>
-      <span>This guide assumes you have the following basic background:</span>
+      <p>This guide assumes you have the following basic background:</p>
       <ul>
         <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
         <li>Good working knowledge of HyperText Markup Language (HTML).</li>
@@ -98,16 +98,16 @@
     </section>
     <section class="main-section" id="Hello_world">
       <header>Hello world</header>
-      <span>
+      <p>
         To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
-      </span>
+      </p>
       <pre>
         <code>
           function greetMe(yourName) { alert("Hello " + yourName); }
           greetMe("World");
         </code>
       </pre>
-      <span>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</span>
+      <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
     </section>
     <section class="main-section" id="Variables">
       <header>Variables</header>
@@ -123,29 +123,29 @@
     </section>
     <section class="main-section" id="Declaring_variables">
       <header>Declaring variables</header>
-      <span>You can declare a variable in three ways:</span>
-      <span>With the keyword var. For example,</span>
+      <p>You can declare a variable in three ways:</p>
+      <p>With the keyword var. For example,</p>
       <pre>
         <code>
           var x = 42.
         </code>
       </pre>
-      <span>This syntax can be used to declare both local and global variables.</span>
-      <span>By simply assigning it a value. For example,</span>
+      <p>This syntax can be used to declare both local and global variables.</p>
+      <p>By simply assigning it a value. For example,</p>
       <pre>
         <code>
           x = 42.
         </code>
       </pre>
-      <span>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
-      </span>
-      <span>With the keyword let. For example,</span>
+      <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
+      </p>
+      <p>With the keyword let. For example,</p>
       <pre>
         <code>
           let y = 13.
         </code>
       </pre>
-      <span>This syntax can be used to declare a block scope local variable. See Variable scope below.</span>
+      <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
     </section>
     <section class="main-section" id="Variable_scope">
       <header>Variable scope</header>
@@ -160,9 +160,9 @@
           if (true) { var x = 5; } console.log(x); // 5
         </code>
       </pre>
-      <span>
+      <p>
         This behavior changes, when using the let declaration introduced in ECMAScript 2015.
-      </span>
+      </p>
       <pre>
         <code>
           if (true) { let y = 5; } console.log(y); // ReferenceError: y is
@@ -205,9 +205,9 @@
           //statements }
         </code>
       </pre>
-      <span>
+      <p>
         However, object attributes are not protected, so the following statement is executed without problems.
-      </span>
+      </p>
       <pre>
         <code>
           const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
@@ -217,32 +217,32 @@
     </section>
     <section class="main-section" id="Data_types">
       <header>Data types</header>
-      <span>The latest ECMAScript standard defines seven data types:</span>
+      <p>The latest ECMAScript standard defines seven data types:</p>
       <ul>
-        <li><span>Six data types that are primitives:</span>
+        <li><p>Six data types that are primitives:</p>
           <ul>
             <li>
-              <span>Boolean. true and false.</span>
+              <p>Boolean. true and false.</p>
             </li>
             <li>
-              <span>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</span>
+              <p>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</p>
             </li>
             <li>
-              <span>undefined. A top-level property whose value is undefined.</span>
+              <p>undefined. A top-level property whose value is undefined.</p>
             </li>
             <li>
-              <span>Number. 42 or 3.14159.</span>
+              <p>Number. 42 or 3.14159.</p>
             </li>
             <li>
-              <span>String. "Howdy"</span>
+              <p>String. "Howdy"</p>
             </li>
             <li>
-              <span>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</span>
+              <p>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</p>
             </li>
           </ul>
         </li>
         <li>
-          <span>and Object</span>
+          <p>and Object</p>
         </li>
       </ul>
       <p>
@@ -316,9 +316,9 @@
       <p>
         The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.
       </p>
-      <span>To execute multiple statements, use a block statement ({ ... }) to group those statements.</span>
-      <span>Example:</span>
-      <span>The following while loop iterates as long as n is less than three:</span>
+      <p>To execute multiple statements, use a block statement ({ ... }) to group those statements.</p>
+      <p>Example:</p>
+      <p>The following while loop iterates as long as n is less than three:</p>
       <pre>
         <code>
           var n = 0; var x = 0; while (n < 3) { n++; x += n; }
@@ -329,16 +329,16 @@
       </p>
       <ul>
         <li>
-          <span>After the first pass: n = 1 and x = 1</span>
+          <p>After the first pass: n = 1 and x = 1</p>
         </li>
         <li>
-          <span>After the second pass: n = 2 and x = 3</span>
+          <p>After the second pass: n = 2 and x = 3</p>
         </li>
         <li>
-          <span>After the third pass: n = 3 and x = 6</span>
+          <p>After the third pass: n = 3 and x = 6</p>
         </li>
       </ul>
-      <span>After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.</span>
+      <p>After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.</p>
     </section>
     <section class="main-section" id="Function_declaractions">
       <header>Function declaractions</header>
@@ -347,16 +347,16 @@
       </p>
       <ul>
         <li>
-          <span>The name of the function.</span>
+          <p>The name of the function.</p>
         </li>
         <li>
-          <span>A list of arguments to the function, enclosed in parentheses and separated by commas.</span>
+          <p>A list of arguments to the function, enclosed in parentheses and separated by commas.</p>
         </li>
         <li>
-          <span>The JavaScript statements that define the function, enclosed in curly brackets, { }.</span>
+          <p>The JavaScript statements that define the function, enclosed in curly brackets, { }.</p>
         </li>
       </ul>
-      <span>For example, the following code defines a simple function named square:</span>
+      <p>For example, the following code defines a simple function named square:</p>
       <pre>
         <code>
           function square(number) { return number * number; }
@@ -378,7 +378,7 @@
       <header>Reference</header>
       <ul>
         <li>
-          <span>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a></span>
+          <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a></p>
         </li>
       </ul>
     </section>
